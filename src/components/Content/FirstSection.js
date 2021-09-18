@@ -1,6 +1,6 @@
-import classes from "./Content.module.css";
+import classes from "./FirstSection.module.css";
 
-function Content() {
+function FirstSection() {
   return (
     <section className={classes.container}>
       <h2 className={classes.firstTitle}>Designed for the future</h2>
@@ -32,4 +32,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default FirstSection;

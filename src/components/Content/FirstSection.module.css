@@ -5,6 +5,7 @@
 .container h2 {
   font-size: 26px;
   color: var(--Very-dark-blue);
+  line-height: 1.1;
 }
 .container img {
   width: 100%;
@@ -21,4 +22,5 @@
   margin-bottom: 20px;
 }
 .container .textContent p {
+  color: var(--Very-dark-grayish-blue);
 }
