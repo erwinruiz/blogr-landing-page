@@ -1,10 +1,13 @@
+import { Fragment } from "react";
 import FirstSection from "./FirstSection";
+import SecondSection from "./SecondSection";
 
 function Content() {
   return (
-    <div>
+    <Fragment>
       <FirstSection />
-    </div>
+      <SecondSection />
+    </Fragment>
   );
 }
 

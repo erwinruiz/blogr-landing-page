@@ -1,6 +1,7 @@
 .container {
   padding: 80px 0;
   text-align: center;
+  margin-bottom: 150px;
 }
 .container h2 {
   font-size: 26px;
@@ -23,4 +24,5 @@
 }
 .container .textContent p {
   color: var(--Very-dark-grayish-blue);
+  line-height: 1.7;
 }
