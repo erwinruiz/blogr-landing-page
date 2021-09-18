@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container .textContent {
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+.container .textContent h2 {
+  margin-bottom: 20px;
+}
+.container .textContent p {
+  color: var(--Very-dark-grayish-blue);
+  line-height: 1.7;
+}
