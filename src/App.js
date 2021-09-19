@@ -1,4 +1,5 @@
 import Content from "./components/Content/Content";
+import Footer from "./components/Footer";
 import Home from "./components/Home/Home";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Home />
       <Content />
+      <Footer />
     </div>
   );
 }
