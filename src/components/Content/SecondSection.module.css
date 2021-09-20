@@ -1,12 +1,10 @@
 .container {
-  background-image: url("../../../src/images/bg-pattern-circles.svg"),
+  background: url("../../../src/images/bg-pattern-circles.svg") top -250px left 50% /
+      610px no-repeat,
     linear-gradient(
       var(--Very-dark-gray-blue),
       var(--Very-dark-desaturated-blue)
     );
-  background-position: 50% 1950%;
-  background-size: 160%;
-  background-repeat: no-repeat;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   text-align: center;
