@@ -29,5 +29,5 @@
   margin-bottom: 0;
 }
 .footer .section ul li:hover {
-  color: var(--White);
+  text-decoration: underline;
 }
