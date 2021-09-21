@@ -27,3 +27,63 @@
   color: var(--White);
   line-height: 1.7;
 }
+
+@media (min-width: 450px) {
+  .container {
+    background: url("../../../src/images/bg-pattern-circles.svg") top -250px left
+        50% / 710px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+  }
+  .container .textContent {
+    padding: 0 50px 100px 50px;
+  }
+}
+@media (min-width: 500px) {
+  .container {
+    background: url("../../../src/images/bg-pattern-circles.svg") top -255px left
+        50% / 780px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+  }
+  .container .textContent {
+    padding: 0 55px 100px 55px;
+  }
+}
+@media (min-width: 520px) {
+  .container {
+    background: url("../../../src/images/bg-pattern-circles.svg") top -270px left
+        50% / 820px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+  }
+  .container img {
+    width: 520px;
+  }
+}
+@media (min-width: 600px) {
+  .container .textContent {
+    padding: 0 65px 100px 65px;
+  }
+}
+@media (min-width: 650px) {
+  .container .textContent {
+    padding: 0 70px 100px 70px;
+  }
+}
+@media (min-width: 700px) {
+  .container .textContent {
+    padding: 0 75px 100px 75px;
+  }
+}
+@media (min-width: 768px) {
+  .container .textContent {
+    padding: 0 100px 100px 100px;
+  }
+}

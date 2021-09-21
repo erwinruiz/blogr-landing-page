@@ -98,3 +98,34 @@
 .activeSection img {
   transform: rotate(180deg);
 }
+
+@media (min-width: 450px) {
+  .mobileMenu {
+    margin: 25% auto;
+  }
+}
+@media (min-width: 500px) {
+  .mobileMenu {
+    margin: 20% auto;
+  }
+}
+@media (min-width: 600px) {
+  .mobileMenu {
+    margin: 18% auto;
+  }
+}
+@media (min-width: 601px) {
+  .mobileMenu {
+    width: 520px;
+  }
+}
+@media (min-width: 650px) {
+  .mobileMenu {
+    margin: 16% auto;
+  }
+}
+@media (min-width: 700px) {
+  .mobileMenu {
+    margin: 14% auto;
+  }
+}

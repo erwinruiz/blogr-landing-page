@@ -54,3 +54,14 @@
   background-color: var(--White);
   color: var(--Very-light-red-hover);
 }
+
+@media (min-width: 450px) {
+  .container .content h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .container .content h1 {
+    font-size: 56px;
+  }
+}

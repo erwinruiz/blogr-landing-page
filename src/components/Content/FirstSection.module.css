@@ -26,3 +26,40 @@
   color: var(--Very-dark-grayish-blue);
   line-height: 1.7;
 }
+
+@media (min-width: 450px) {
+  .container .textContent {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 500px) {
+  .container .textContent {
+    padding: 0 55px;
+  }
+}
+@media (min-width: 520px){
+    .container img {
+      width: 520px;
+    }
+}
+@media (min-width: 600px) {
+  .container .textContent {
+    padding: 0 65px;
+  }
+}
+@media (min-width: 650px) {
+  .container .textContent {
+    padding: 0 70px;
+  }
+}
+@media (min-width: 700px) {
+  .container .textContent {
+    padding: 0 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container .textContent {
+    padding: 0 100px;
+  }
+}
