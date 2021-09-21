@@ -1,9 +1,12 @@
-import classes from "./MobileMenu.module.css";
+import classes from "./Menu.module.css";
 import ReactDOM from "react-dom";
 import { Fragment, useReducer } from "react";
 
-const arrowImg = (
+const darkArrowImg = (
   <img src="./images/icon-arrow-dark.svg" alt="icon-arrow-dark.svg" />
+);
+const lightArrowImg = (
+  <img src="./images/icon-arrow-light.svg" alt="icon-arrow-dark.svg" />
 );
 
 const initialState = {
@@ -28,7 +31,7 @@ const reducer = (state, action) => {
   }
 };
 
-function MobileMenu(props) {
+function Menu(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const productHandler = () => {
@@ -42,19 +45,28 @@ function MobileMenu(props) {
   };
 
   const Backdrop = (props) => {
-    return <div className={classes.backdrop} onClick={props.onClose}></div>;
+    let backdropActiveOnDesktop = "";
+    if (state.showProduct || state.showCompany || state.showConnect) {
+      backdropActiveOnDesktop = `${classes.backdropActive}`;
+    }
+    return (
+      <div
+        className={`${props.className} ${classes.backdrop} ${backdropActiveOnDesktop}`}
+        onClick={props.onClose}
+      ></div>
+    );
   };
 
-  const Menu = () => {
+  const Menu = (props) => {
     return (
-      <div className={classes.mobileMenu}>
+      <div className={`${props.className} ${classes.menu}`}>
         <div className={classes.sections}>
           <div className={classes.section}>
             <h4
               onClick={productHandler}
               className={state.showProduct ? classes.activeSection : ""}
             >
-              Product {arrowImg}
+              Product {props.img}
             </h4>
             {state.showProduct && (
               <div className={classes.content}>
@@ -72,7 +84,7 @@ function MobileMenu(props) {
               onClick={companyHandler}
               className={state.showCompany ? classes.activeSection : ""}
             >
-              Company {arrowImg}
+              Company {props.img}
             </h4>
             {state.showCompany && (
               <div className={classes.content}>
@@ -89,7 +101,7 @@ function MobileMenu(props) {
               onClick={connectHandler}
               className={state.showConnect ? classes.activeSection : ""}
             >
-              Connect {arrowImg}
+              Connect {props.img}
             </h4>
             {state.showConnect && (
               <div className={classes.content}>
@@ -108,15 +120,34 @@ function MobileMenu(props) {
     );
   };
 
-  return (
-    <Fragment>
-      {ReactDOM.createPortal(
-        <Backdrop onClose={props.onClose} />,
-        document.getElementById("backdrop-root")
-      )}
-      {ReactDOM.createPortal(<Menu />, document.getElementById("overlay-root"))}
-    </Fragment>
-  );
+  // Show only on mobile/tablet design
+  if (props.type === "mobile") {
+    return (
+      <Fragment>
+        {ReactDOM.createPortal(
+          <Backdrop onClose={props.onClose} className={classes.mobileMenu} />,
+          document.getElementById("backdrop-root")
+        )}
+        {ReactDOM.createPortal(
+          <Menu className={classes.mobileMenu} img={darkArrowImg} />,
+          document.getElementById("overlay-root")
+        )}
+      </Fragment>
+    );
+  }
+
+  // Show only on desktop design
+  if (props.type === "desktop") {
+    return (
+      <Fragment>
+        {ReactDOM.createPortal(
+          <Backdrop onClose={props.onCloseSection} />,
+          document.getElementById("backdrop-root")
+        )}
+        <Menu className={classes.desktopMenu} img={lightArrowImg} />
+      </Fragment>
+    );
+  }
 }
 
-export default MobileMenu;
+export default Menu;

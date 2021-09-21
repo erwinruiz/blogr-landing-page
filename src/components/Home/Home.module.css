@@ -18,7 +18,7 @@
   margin-bottom: 15px;
 }
 .container .content p {
-  color: var(--White);
+  color: var(--White-light);
   font-size: 18px;
   margin-bottom: 50px;
 }
@@ -56,6 +56,9 @@
 }
 
 @media (min-width: 450px) {
+  .container {
+    background-position: 35% 45%;
+  }
   .container .content h1 {
     font-size: 36px;
   }
@@ -63,5 +66,10 @@
 @media (min-width: 768px) {
   .container .content h1 {
     font-size: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    background-position: 36% 50%;
   }
 }

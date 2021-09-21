@@ -8,3 +8,12 @@
 .header .menuIcon {
   cursor: pointer;
 }
+
+@media (min-width: 1024px) {
+  .header .menuIcon {
+    display: none;
+  }
+  .header {
+    gap: 60px;
+  }
+}

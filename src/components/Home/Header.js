@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import MobileMenu from "../UI/MobileMenu";
+import Menu from "../UI/Menu";
 import classes from "./Header.module.css";
 
 function Header() {
@@ -28,8 +28,9 @@ function Header() {
             alt="close icon"
           />
         )}
+        <Menu onClose={menuHandler} type="desktop" />
       </header>
-      {menuIsOpen && <MobileMenu onClose={menuHandler} />}
+      {menuIsOpen && <Menu onClose={menuHandler} type="mobile" />}
     </Fragment>
   );
 }
