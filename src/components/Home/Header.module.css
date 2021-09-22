@@ -10,10 +10,41 @@
 }
 
 @media (min-width: 1024px) {
+  .header {
+    padding: 0 35px;
+    gap: 60px;
+  }
   .header .menuIcon {
     display: none;
   }
+}
+@media (min-width: 1124px) {
   .header {
+    padding: 0 45px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1224px) {
+  .header {
+    padding: 0 95px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1324px) {
+  .header {
+    padding: 0 115px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    padding: 0 135px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1540px) {
+  .header {
+    padding: 0 155px;
     gap: 60px;
   }
 }

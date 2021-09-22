@@ -140,10 +140,10 @@ function Menu(props) {
   if (props.type === "desktop") {
     return (
       <Fragment>
-        {ReactDOM.createPortal(
+        {/* {ReactDOM.createPortal(
           <Backdrop onClose={props.onCloseSection} />,
           document.getElementById("backdrop-root")
-        )}
+        )} */}
         <Menu className={classes.desktopMenu} img={lightArrowImg} />
       </Fragment>
     );
