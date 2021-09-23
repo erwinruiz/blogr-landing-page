@@ -24,7 +24,7 @@
   line-height: 1.3;
 }
 .container .textContent p {
-  color: var(--White);
+  color: var(--White-light);
   line-height: 1.7;
 }
 
@@ -85,5 +85,31 @@
 @media (min-width: 768px) {
   .container .textContent {
     padding: 0 100px 100px 100px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    background: url("../../../src/images/bg-pattern-circles.svg") top -510px left -48% /
+        1000px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+    height: 375px;
+  }
+  .container img {
+    margin-top: -65px;
+    margin-left: 148px;
+    position: absolute;
+  }
+  .container .textContent {
+    padding: 100px 191px 100px 729px;
+    text-align: left;
+  }
+  .container .textContent h2 {
+    font-size: 35px;
   }
 }
