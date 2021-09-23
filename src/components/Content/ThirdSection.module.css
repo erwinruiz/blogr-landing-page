@@ -11,6 +11,7 @@
   margin-bottom: 30px;
 }
 .container .textContent h2 {
+  color: var(--Very-dark-blue);
   margin-bottom: 20px;
 }
 .container .textContent p {
@@ -51,5 +52,24 @@
 @media (min-width: 768px) {
   .container .textContent {
     padding: 0 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 130px 0;
+    padding: 210px 0;
+    background: url("../../../src/images/illustration-laptop-desktop.svg") top
+      0px left -55% / 950px no-repeat;
+  }
+  .container img {
+    display: none;
+  }
+  .container .textContent {
+    text-align: left;
+    padding: 0 215px 0 735px;
+  }
+  .container .textContent h2 {
+    font-size: 26px;
   }
 }
