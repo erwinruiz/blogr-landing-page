@@ -43,3 +43,19 @@
     width: 101px;
   }
 }
+
+@media (min-width: 1124px) {
+  .footer {
+    padding: 60px 40px;
+  }
+}
+@media (min-width: 1224px) {
+  .footer {
+    padding: 60px 80px;
+  }
+}
+@media (min-width: 1324px) {
+  .footer {
+    padding: 60px 120px;
+  }
+}
