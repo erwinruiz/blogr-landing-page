@@ -92,8 +92,8 @@
 @media (min-width: 1024px) {
   .container {
     display: flex;
-    background: url("../../../src/images/bg-pattern-circles.svg") top -510px left -48% /
-        1000px no-repeat,
+    background: url("../../../src/images/bg-pattern-circles.svg") top -367px left -76% /
+        800px no-repeat,
       linear-gradient(
         var(--Very-dark-gray-blue),
         var(--Very-dark-desaturated-blue)
@@ -102,14 +102,82 @@
   }
   .container img {
     margin-top: -65px;
-    margin-left: 148px;
+    margin-left: -15px;
     position: absolute;
   }
   .container .textContent {
-    padding: 100px 191px 100px 729px;
+    padding: 100px 0px 100px 500px;
     text-align: left;
   }
   .container .textContent h2 {
     font-size: 35px;
+  }
+}
+@media (min-width: 1124px) {
+  .container {
+    display: flex;
+    background: url("../../../src/images/bg-pattern-circles.svg") top -449px left -112% /
+        900px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+  }
+  .container img {
+    margin-left: 30px;
+  }
+  .container .textContent {
+    padding: 100px 36px 100px 584px;
+  }
+}
+@media (min-width: 1224px) {
+  .container {
+    display: flex;
+    background: url("../../../src/images/bg-pattern-circles.svg") top -482px left -84% /
+        950px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+  }
+  .container img {
+    margin-left: 88px;
+  }
+  .container .textContent {
+    padding: 100px 46px 100px 655px;
+  }
+}
+@media (min-width: 1324px) {
+  .container {
+    display: flex;
+    background: url("../../../src/images/bg-pattern-circles.svg") top -487px left -60% /
+        980px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+  }
+  .container img {
+    margin-left: 138px;
+  }
+  .container .textContent {
+    padding: 100px 80px 100px 720px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    background: url("../../../src/images/bg-pattern-circles.svg") top -510px left -48% /
+        1000px no-repeat,
+      linear-gradient(
+        var(--Very-dark-gray-blue),
+        var(--Very-dark-desaturated-blue)
+      );
+  }
+  .container img {
+    margin-left: 148px;
+  }
+  .container .textContent {
+    padding: 100px 191px 100px 729px;
   }
 }

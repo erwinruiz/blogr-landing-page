@@ -57,19 +57,46 @@
 
 @media (min-width: 1024px) {
   .container {
-    margin: 130px 0;
+    margin: 170px 0 0 0;
     padding: 210px 0;
     background: url("../../../src/images/illustration-laptop-desktop.svg") top
-      0px left -55% / 950px no-repeat;
+      0px left -227px / 800px no-repeat;
   }
   .container img {
     display: none;
   }
   .container .textContent {
     text-align: left;
-    padding: 0 215px 0 735px;
+    padding: 0 30px 0 558px;
   }
   .container .textContent h2 {
     font-size: 26px;
+  }
+}
+@media (min-width: 1124px) {
+  .container {
+    background-position: top 0px left -240px;
+    background-size: 850px;
+  }
+  .container .textContent {
+    padding: 0 54px 0 600px;
+  }
+}
+@media (min-width: 1224px) {
+  .container {
+    background-position: top 0px left -254px;
+    background-size: 900px;
+  }
+  .container .textContent {
+    padding: 0 54px 0 670px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    background-position: top 0px left -55%;
+    background-size: 950px;
+  }
+  .container .textContent {
+    padding: 0 215px 0 735px;
   }
 }

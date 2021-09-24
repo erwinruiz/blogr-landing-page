@@ -68,7 +68,7 @@
 /* Desktop */
 @media (min-width: 1024px) {
   .container {
-    padding: 185px 128px;
+    padding: 185px 40px;
     background-image: url("../../images/illustration-editor-desktop.svg");
     background-repeat: no-repeat;
     background-size: 64%;
@@ -94,5 +94,20 @@
   }
   .container .firstTextContent {
     margin-bottom: 80px;
+  }
+}
+@media (min-width: 1224px) {
+  .container {
+    padding: 185px 80px;
+  }
+}
+@media (min-width: 1324px) {
+  .container {
+    padding: 185px 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding: 185px 128px;
   }
 }
