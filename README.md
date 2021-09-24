@@ -22,16 +22,16 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Click here]()
+- Live Site URL: [Click here](https://erwinruiz.github.io/blogr-landing-page/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- CSS Modules
 
 ### Layout
 
@@ -42,4 +42,6 @@ The designs were created to the following widths:
 
 ### Screenshots
 
-![](./screenshot.jpg)
+![](./screenshots/desktop-design.png)
+![](./screenshots/mobile-design.png)
+![](./screenshots/mobile-design-active-menu.png)
