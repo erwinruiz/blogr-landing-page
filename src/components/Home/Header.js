@@ -4,6 +4,7 @@ import classes from "./Header.module.css";
 
 function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   const menuHandler = () => {
     setMenuIsOpen((state) => !state);
   };
@@ -28,7 +29,7 @@ function Header() {
             alt="close icon"
           />
         )}
-        <Menu onClose={menuHandler} type="desktop" />
+        <Menu type="desktop" />
       </header>
       {menuIsOpen && <Menu onClose={menuHandler} type="mobile" />}
     </Fragment>

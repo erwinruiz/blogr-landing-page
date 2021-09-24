@@ -91,6 +91,9 @@
 .actions .signUp:hover {
   background: var(--Very-light-red-hover);
 }
+.backdropDesktop {
+  display: none;
+}
 /* Active section */
 .activeSection {
   color: hsla(208, 49%, 24%, 0.6);
@@ -165,6 +168,9 @@
   display: none;
 }
 @media (min-width: 1024px) {
+  .backdropDesktop {
+    display: initial;
+  }
   .backdrop {
     display: none;
   }

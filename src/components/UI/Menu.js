@@ -17,14 +17,17 @@ const initialState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "product":
+    case "PRODUCT":
       return { ...initialState, showProduct: !state.showProduct };
 
-    case "company":
+    case "COMPANY":
       return { ...initialState, showCompany: !state.showCompany };
 
-    case "connect":
+    case "CONNECT":
       return { ...initialState, showConnect: !state.showConnect };
+
+    case "CLOSE_ACTIVE_SECTION":
+      return initialState;
 
     default:
       return state;
@@ -35,13 +38,17 @@ function Menu(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const productHandler = () => {
-    dispatch({ type: "product" });
+    dispatch({ type: "PRODUCT" });
   };
   const companyHandler = () => {
-    dispatch({ type: "company" });
+    dispatch({ type: "COMPANY" });
   };
   const connectHandler = () => {
-    dispatch({ type: "connect" });
+    dispatch({ type: "CONNECT" });
+  };
+
+  const closeMenuSectionHandler = () => {
+    dispatch({ type: "CLOSE_ACTIVE_SECTION" });
   };
 
   const Backdrop = (props) => {
@@ -49,6 +56,7 @@ function Menu(props) {
     if (state.showProduct || state.showCompany || state.showConnect) {
       backdropActiveOnDesktop = `${classes.backdropActive}`;
     }
+
     return (
       <div
         className={`${props.className} ${classes.backdrop} ${backdropActiveOnDesktop}`}
@@ -140,10 +148,13 @@ function Menu(props) {
   if (props.type === "desktop") {
     return (
       <Fragment>
-        {/* {ReactDOM.createPortal(
-          <Backdrop onClose={props.onCloseSection} />,
+        {ReactDOM.createPortal(
+          <Backdrop
+            onClose={closeMenuSectionHandler}
+            className={classes.backdropDesktop}
+          />,
           document.getElementById("backdrop-root")
-        )} */}
+        )}
         <Menu className={classes.desktopMenu} img={lightArrowImg} />
       </Fragment>
     );
